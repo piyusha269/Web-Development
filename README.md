@@ -1,7 +1,19 @@
 
-# Web-Development 🚀
+# Web-Development 
 
 This repository contains beginner-friendly web development projects built using HTML, CSS, and JavaScript. These projects were created to strengthen core web development skills and demonstrate basic CRUD and UI features.
+
+---
+
+## 📂 Folder Structure
+
+```
+Web-Development/
+│
+├── Notes Website/
+├── Pizza Website/
+└── Todo list app/
+```
 
 ---
 
@@ -31,18 +43,6 @@ This repository contains beginner-friendly web development projects built using 
   - Add and remove tasks.
   - Interactive UI with client-side validation.
 - **Tech Used:** HTML, CSS, JavaScript
-
----
-
-## 📂 Folder Structure
-
-```
-Web-Development/
-│
-├── Notes Website/
-├── Pizza Website/
-└── Todo list app/
-```
 
 ---
 
