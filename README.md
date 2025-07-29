@@ -10,6 +10,7 @@ This repository contains beginner-friendly web development projects built using 
 ```
 Web-Development/
 │
+├── Infotech Website/
 ├── Notes Website/
 ├── Pizza Website/
 └── Todo list app/
@@ -18,6 +19,17 @@ Web-Development/
 ---
 
 ## 🔖 Projects Included
+
+### 💻 1. Infotech Website  
+- **Description:** A static multi-page educational website for an IT training institute.  
+- **Features:**  
+  - Clean and modern UI with a consistent layout across pages.  
+  - Pages: Home, About, Courses (with course cards), and Contact.  
+  - Smooth navigation with responsive design.  
+  - Contact form with basic client-side validation.  
+- **Tech Used:** HTML, CSS, JavaScript  
+
+---
 
 ### 📒 1. Notes Website
 - **Description:** A simple notes-taking web application.
