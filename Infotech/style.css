@@ -1,0 +1,404 @@
+/* --------------------- Global Settings --------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+p {
+    font-size: 30px;
+    line-height: 1.6;
+  }
+nav{
+  padding-top: 0px;
+}
+
+.card:focus,
+.nav:focus,
+.hero-img:focus,
+.features:focus,
+.highlights:focus {
+  outline: 3px solid #a94442;
+  box-shadow: 0 0 8px rgba(169, 68, 66, 0.4);
+}
+
+
+/* --------------------- Header & Navigation --------------------- */
+.site-header {
+    background-color: #6396e7; 
+    width: 100vw;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-header{
+  color: #ffffff;
+}
+
+
+header{
+  height: 90px;
+}
+.logo {
+  padding: 0px;
+  margin: 0px;
+  height: 100px;
+}
+
+.site-header h1 {
+    margin: 0 15px;
+    font-size: 28px;
+}
+
+nav a {
+  background-color: #1b3898;   
+  color: white;
+  margin: 5px;
+  padding: 8px 18px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #7e1f23;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid #ffcccb; /* light red focus ring */
+  outline-offset: 2px;
+}
+/* --------------------- Main Content --------------------- */
+.hero-section {
+  position: relative;
+  text-align: left;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Align towards left with padding */
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: white;
+  width: 2px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* --------------------- Info Section Blocks --------------------- */
+.intro,
+.features,
+.highlights {
+  margin-top: 30px;
+  background: #fff;
+  padding: 25px 30px;
+  border-left: 5px solid #722F37;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(14, 206, 65, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.intro:hover,
+.features:hover,
+.highlights:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(114, 47, 55, 0.3); /* wine shade */
+}
+
+.intro h2,
+.features h2,
+.highlights h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #3286b8;
+  border-bottom: 2px solid #fbeeee;
+  padding-bottom: 5px;
+}
+
+.intro p,
+.features li,
+.features p,
+.highlights p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* --------------------- Features List Styling --------------------- */
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  background-color: #d9f0f9;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #6cbfef;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.features li:hover {
+  background-color: #fbeeee;
+  cursor: pointer;
+}
+
+/* --------------------- Highlights Box Styling --------------------- */
+.highlight-box {
+  background-color: #d9f0f9;
+  padding: 15px;
+  border-left: 4px solid #6cbfef;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(121, 190, 230, 0.2);
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.highlight-box p {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.highlight-box:hover {
+  box-shadow: 0px 4px 10px rgba(121, 190, 230, 0.3);
+}
+
+/* --------------------- Course List Page --------------------- */
+.course-button {
+  background: #a94442;
+  padding: 12px 16px;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* If <img> is inside the button */
+.course-button img {
+  display: block;
+  margin: 0 auto 8px auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.course-table td {
+  text-align: center;
+  padding: 20px;
+  vertical-align: top;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle transparent */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* .course-table td:hover {
+  transform: translateY(-5px);
+} */
+
+.course-table img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.course-table a {
+  text-decoration: none;
+  color: #722F37;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* --------------------- Course Page --------------------- */
+
+
+/* Section heading */
+.course-section h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+/* Course buttons/links inside table or div */
+.course-button {
+  background-color: #a94442;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.course-table {
+  border-spacing: 20px;
+  width: 100%;
+  background: transparent;
+}
+
+/* If image inside course link/button */
+.course-button img {
+  width: 500px;
+  height: 180px;
+  /* object-fit: cover; */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 10px;
+}
+/* Course card wrapper */
+.card {
+  background-color: #ffffffcc; /* light transparent white */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+/* .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+} */
+
+
+.card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+/* Image in the card */
+.card img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+
+/* --------------------- Contact Page --------------------- */
+.contact-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #a94442;
+    outline: none;
+}
+
+form button {
+    padding: 12px 24px;
+    background-color: #3286b8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #a94442;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.contact-info p{
+  font-size: 20px;
+}
+.contact-info i {
+    margin-right: 8px;
+    color: #722F37;
+}
+
+/* --------------------- Footer --------------------- */
+footer {
+    background-color: #3e1f23;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Sakshi Learning Hub</title>
+  <link rel="stylesheet" href="style.css" />
+   <script src="script/script1.js" defer></script>
+   <script src="script/script.js" defer></script>
+   
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logo2.png" alt="Sakshi Logo" class="logo"/>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html" class="nav"  >Home</a>
+      <a href="about.html" class="nav" >About</a>
+      <a href="courses.html" class="nav"  >Courses</a>
+      <a href="contact.html" class="nav" >Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+
+      <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contact-form" novalidate>
+      <label for="name">👤 Full Name:</label>
+      <input type="text" id="name" name="name" required aria-required="true" />
+
+      <label for="email">📧 Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email" aria-required="true" />
+
+      <label for="phone">📞 Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Mobile No" minlength="10" maxlength="10" required aria-required="true" />
+
+      <label for="message">💬 Message:</label>
+      <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+      <button type="submit">Send Message</button>
+      <div id="form-msg" role="alert" aria-live="polite"></div>
+    </form>
+  </div>
+
+
+
+    <div class="contact-info">
+        <p><i>📞 Phone:</i> +91 9307869188</p>
+        <p><i>✉️ Email:</i> <a href="mailto:sakshiacademy@gmail.com.com">sakshiacademy@gmail.com</a></p>
+        <p><i>📍 Address:</i> Sakshi Academy, Pune, Maharashtra</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>&copy; 2025 Sakshi Academy All Rights Reserved</footer>
+  <script src="js/contact.js"></script>
+</body>
+</html>
